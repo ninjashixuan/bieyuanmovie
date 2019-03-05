@@ -5,6 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 import pymysql, os
 
 app = Flask(__name__)
+
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.config['SECRET_KEY'] = "73d00f0ab55340a9b486af2802d6b017"
